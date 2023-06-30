@@ -9,7 +9,7 @@ hosts_path = "C:\\Windows\\System32\\drivers\\etc\\hosts"
 redirect = "127.0.0.1"
 
 # the banes of my future career
-website_list = ["https://www.bbc.co.uk/news/business-66019291"]
+website_list = ["google.com"]
 
 # replace with ur username
 leetcode_api_url = "https://faisal-leetcode-api.cyclic.app/swrlit"
@@ -26,7 +26,7 @@ while True:
     # Time period during which to block websites
     #if dt(dt.now().year, dt.now().month, dt.now().day, 3.5) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 3.6):
       
-    if dt(dt.now().year, dt.now().month, dt.now().day, 3) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 4):
+    if dt(dt.now().year, dt.now().month, dt.now().day, 13) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 14):
         print("Blocking websites...")
         with open(hosts_path, 'r+') as file:
             content = file.read()

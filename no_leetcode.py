@@ -8,11 +8,11 @@ hosts_path = "C:\\Windows\\System32\\drivers\\etc\\hosts"
 redirect = "127.0.0.1"
 
 # List of websites to block
-website_list = ["https://www.bbc.co.uk/news/business-66019291","random_test.com","google.com"]
+website_list = ["random_test.com","google.com"]
 
 while True:
     # Time period during which to block websites
-    if dt(dt.now().year, dt.now().month, dt.now().day, 4) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 5):
+    if dt(dt.now().year, dt.now().month, dt.now().day, 13) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 14):
         print("Blocking websites...")
         with open(hosts_path, 'r+') as file:
             content = file.read()
